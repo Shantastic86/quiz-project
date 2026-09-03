@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Style 3: Bold & Dramatic</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0a0a0a;
+    padding: 2rem;
+  }
+  .card {
+    max-width: 480px;
+    width: 100%;
+    border: 2px solid #ffcc00;
+    padding: 3rem 2.5rem;
+    position: relative;
+  }
+  .label {
+    position: absolute;
+    top: -14px;
+    left: 2rem;
+    background: #ffcc00;
+    color: #0a0a0a;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.35rem 0.9rem;
+  }
+  h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2.1rem;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+  }
+  .options { display: flex; flex-direction: column; gap: 0.6rem; }
+  .option {
+    background: transparent;
+    border: 1px solid #444;
+    padding: 1.1rem 1.3rem;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    letter-spacing: 0.02em;
+  }
+  .option:hover {
+    border-color: #ffcc00;
+    background: #ffcc00;
+    color: #0a0a0a;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <span class="label">Question 03 / 06</span>
+    <h1>What's Your Ideal Friday Night?</h1>
+    <div class="options">
+      <div class="option">Out dancing until 2am</div>
+      <div class="option">Movie marathon with snacks</div>
+      <div class="option">Quiet night, book in hand</div>
+      <div class="option">Baking something sweet</div>
+    </div>
+  </div>
+</body>
+</html>

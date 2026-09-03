@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Style 4: Warm & Cozy</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(160deg, #F5E6D3 0%, #E8C4A0 50%, #C89B7B 100%);
+    padding: 2rem;
+  }
+  .card {
+    background: #FFF9F2;
+    border-radius: 24px;
+    padding: 3rem 2.5rem;
+    max-width: 480px;
+    width: 100%;
+    box-shadow: 0 15px 40px rgba(120, 80, 40, 0.15);
+    border: 1px solid #E8D5C0;
+  }
+  .label {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #A87249;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  h1 {
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: #5C3D26;
+    line-height: 1.4;
+    margin-bottom: 2.2rem;
+  }
+  .options { display: flex; flex-direction: column; gap: 0.8rem; }
+  .option {
+    background: #F5E6D3;
+    border-radius: 14px;
+    padding: 1.05rem 1.3rem;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #5C3D26;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+    border-left: 4px solid transparent;
+  }
+  .option:hover {
+    background: #EDD9BE;
+    border-left: 4px solid #A87249;
+    transform: translateX(4px);
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <span class="label">~ question 3 of 6 ~</span>
+    <h1>What's your ideal Friday night?</h1>
+    <div class="options">
+      <div class="option">Out dancing until 2am</div>
+      <div class="option">Movie marathon with snacks</div>
+      <div class="option">Quiet night, book in hand</div>
+      <div class="option">Baking something sweet</div>
+    </div>
+  </div>
+</body>
+</html>
